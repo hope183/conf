@@ -1,4 +1,4 @@
-module conf
+module github.com/hope183/conf
 
 go 1.23.0
 
