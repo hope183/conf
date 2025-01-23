@@ -1,13 +1,21 @@
 module github.com/hope183/conf
 
-go 1.23.0
+go 1.21.0
 
-require gorm.io/driver/sqlite v1.5.7
+require (
+	github.com/mattn/go-sqlite3 v1.14.22
+	github.com/spf13/viper v1.19.0
+	github.com/stretchr/testify v1.10.0
+	gorm.io/driver/sqlite v1.5.7
+	gorm.io/gorm v1.25.7-0.20240204074919-46816ad31dde
+)
 
 require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.2 // indirect
@@ -26,13 +34,4 @@ require (
 	golang.org/x/text v0.14.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-)
-
-require (
-	github.com/jinzhu/inflection v1.0.0 // indirect
-	github.com/jinzhu/now v1.1.5 // indirect
-	github.com/mattn/go-sqlite3 v1.14.22 // indirect
-	github.com/spf13/viper v1.19.0
-	github.com/stretchr/testify v1.10.0
-	gorm.io/gorm v1.25.7-0.20240204074919-46816ad31dde // indirect
 )
